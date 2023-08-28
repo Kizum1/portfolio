@@ -257,11 +257,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 200px 50px 250px 50px;
   /* Removed background-image property */
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .banner .tagline {
   font-weight: 700;
@@ -529,14 +526,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     left: 50%;
     margin-left: -2px;
   }
-}
-
-
-.vertical-timeline-title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
 }
 
