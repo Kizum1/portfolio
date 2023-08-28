@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/hero.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -52,7 +52,7 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row>
+      <Row>
           <Col xs={12} md={6} xl={7} className="align-self-center">
             <div className="animate__animated animate__fadeIn">
               <h1>
@@ -66,6 +66,7 @@ export const Banner = () => {
                   <span className="wrap">{text}</span>
                 </span>
               </h1>
+              <tsParticle />
               <p></p>
               <button onClick={() => console.log("connect")}>
                 Reach out
