@@ -92,13 +92,7 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
-p.success {
-	color: green;
-}
 
-p.danger {
-	color: red;
-}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -109,11 +103,11 @@ nav.navbar {
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 10px;
-  background-color: #121212;
+  padding: 15px;
+  background-color: #312d2d;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 10%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -247,11 +241,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
-.tags {
-  display: block;
-  margin-top: 5px; /* Optional: Add some spacing between description and tags */
-  color: #5dc05d;
+
+.logo-text {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: 400; /* You can adjust the font weight as desired */
+  color: #ffffff; /* Set the text color */
+  letter-spacing: 0.8px;
 }
+
 
 
 /************ Banner Css ************/
@@ -330,7 +327,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 130px 0;
+  padding: 100px;
   position: relative;
 
 }
@@ -463,6 +460,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.tags {
+  display: block;
+  margin-top: 5px; /* Optional: Add some spacing between description and tags */
+  color: #5dc05d;
+}
 
 /************ Footer Css ************/
 

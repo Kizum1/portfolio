@@ -5,49 +5,58 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(100);
-  const toRotate = [
-    "CSE Sophomore",
-    "Frontend Developer",
-    "Cybersecurity Fanatic",
-  ];
-  const period = 1000;
+ // Initialize state variables to manage the text animation
+const [loopNum, setLoopNum] = useState(0); // Keeps track of the current iteration
+const [isDeleting, setIsDeleting] = useState(false); // Indicates if text is being deleted
+const [text, setText] = useState(""); // The current text displayed
+const [delta, setDelta] = useState(100); // The delay between each animation step
+const toRotate = [
+  "CSE Sophomore",
+  "Frontend Developer",
+  "Cybersecurity Fanatic",
+]; // Array of strings to rotate through
+const period = 1000; // The duration of a full text cycle
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+// Set up an effect that triggers the animation loop
+useEffect(() => {
+  // Set up a ticker to call the 'tick' function with the specified delay
+  let ticker = setInterval(() => {
+    tick();
+  }, delta);
 
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(100);
-    }
+  // Clean up by clearing the interval when the 'text' state changes
+  return () => {
+    clearInterval(ticker);
   };
+}, [text]);
+
+// Function to handle each step of the text animation
+const tick = () => {
+  let i = loopNum % toRotate.length; // Get the current string index to display
+  let fullText = toRotate[i]; // Get the full string at the current index
+  let updatedText = isDeleting
+    ? fullText.substring(0, text.length - 1) // Delete one character if 'isDeleting' is true
+    : fullText.substring(0, text.length + 1); // Add one character if not deleting
+
+  setText(updatedText); // Update the displayed text
+
+  // Adjust the animation speed if deleting
+  if (isDeleting) {
+    setDelta((prevDelta) => prevDelta / 2); // Double the animation speed while deleting
+  }
+
+  // Switch to deleting mode when the full text is displayed
+  if (!isDeleting && updatedText === fullText) {
+    setIsDeleting(true);
+    setDelta(period); // Set delay to the 'period' for a pause while text is fully displayed
+  } else if (isDeleting && updatedText === "") {
+    // Switch back to adding mode when text is fully deleted
+    setIsDeleting(false);
+    setLoopNum(loopNum + 1); // Move to the next string index
+    setDelta(100); // Reset the delay for the next iteration
+  }
+};
+
 
   return (
     <section className="banner" id="home">

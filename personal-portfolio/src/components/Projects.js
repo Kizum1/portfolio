@@ -51,13 +51,13 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <div className="animate__animated animate__fadeIn">
               <h2>Projects</h2>
-              <p>This is a catalogue of all the projects I have contributed to. I primarily work on the frontend, however I have dabbled in other areas such as modeling, and bot development.</p>
+              <p>This showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
               <Row>
                 {projects.map((project, index) => (
                   <ProjectCard key={index} {...project} />
