@@ -104,7 +104,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 15px;
-  background-color: #312d2d;
+  background-color: #0a0a0c;
 }
 nav.navbar a.navbar-brand {
     width: 10%;
@@ -253,9 +253,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
   padding: 200px 50px 250px 50px;
-  /* Removed background-image property */
+  background-image: url('./assets/img/banner-bg.png');
+  background-repeat: no-repeat;
 }
 .banner .tagline {
   font-weight: 700;
@@ -489,6 +489,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .vertical-timeline * {
   box-sizing: border-box;
+  
 }
 
 .vertical-timeline {
@@ -528,5 +529,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     left: 50%;
     margin-left: -2px;
   }
+}
+
+.timeline-container {
+  width: 100%;
+  background-image: url('./assets/img/bannerbg.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  font-family: Arial, sans-serif;
+}
+
+
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
 }
 

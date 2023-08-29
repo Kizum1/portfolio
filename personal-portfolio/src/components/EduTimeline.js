@@ -7,6 +7,8 @@ import UCB from '../assets/img/ucb.png';
 
 export const EduTimeline = () => {
   return (
+    <div className="timeline-container">
+      <section className='project'><h2>My Education</h2></section>
     <VerticalTimeline>
       <VerticalTimelineElement
         id="education"
@@ -73,6 +75,6 @@ export const EduTimeline = () => {
           X Company Intern <br />
         </p>
       </VerticalTimelineElement>
-    </VerticalTimeline>
+    </VerticalTimeline></div>
   );
 };
