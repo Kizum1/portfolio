@@ -18,7 +18,9 @@ import {
 
 export const Techstack = () => {
   return (
+    
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <section className='techstackHeader'><h2>Languages / Frameworks</h2></section>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>

@@ -8,6 +8,7 @@ import { EduTimeline } from './components/EduTimeline';
 import { Techstack } from './components/Tech';
 import { Toolstack } from './components/Tool';
 
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       <Techstack />
       <Toolstack />
       <Footer />
+      
     </div>
   );
 }

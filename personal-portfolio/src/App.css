@@ -254,7 +254,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   padding: 200px 50px 250px 50px;
-  background-image: url('./assets/img/banner-bg.png');
+  /* background-image: url('./assets/img/banner-bg.png'); */
   background-repeat: no-repeat;
 }
 .banner .tagline {
@@ -329,13 +329,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 100px;
   position: relative;
-
 }
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
+
+.techstackHeader h2 {
+  font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -533,7 +539,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .timeline-container {
   width: 100%;
-  background-image: url('./assets/img/bannerbg.jpg');
+  background-image: url();
   background-size: cover;
   background-position: center;
   

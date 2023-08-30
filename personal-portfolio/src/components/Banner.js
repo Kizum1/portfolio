@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/hero.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
+
 
 export const Banner = () => {
  // Initialize state variables to manage the text animation

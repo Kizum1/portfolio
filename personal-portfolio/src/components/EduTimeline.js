@@ -8,7 +8,7 @@ import UCB from '../assets/img/ucb.png';
 export const EduTimeline = () => {
   return (
     <div className="timeline-container">
-      <section className='project'><h2>My Education</h2></section>
+      <section className='project'><h2>Education</h2></section>
     <VerticalTimeline>
       <VerticalTimelineElement
         id="education"
@@ -29,7 +29,7 @@ export const EduTimeline = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentStyle={{ background: '#FF9A8B', color: '#fff' }}
+        contentStyle={{ background: '#6b2fbb', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid #FF9A8B' }}
         date="2022 - 2024"
         iconStyle={{ background: '#FF9A8B', color: '#fff' }}
@@ -45,14 +45,14 @@ export const EduTimeline = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentStyle={{ background: '#68C7D1', color: '#fff' }}
+        contentStyle={{ background: '#ed54bb', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid #68C7D1' }}
         date="2024 - 2026"
         iconStyle={{ background: '#68C7D1', color: '#fff' }}
         icon={<img src={UCB} alt="UCB Logo" />}
       >
         <h3 className="vertical-timeline-element-title">Undergraduate Student</h3>
-        <h5 className="vertical-timeline-element-subtitle">X City, X State</h5>
+        <h5 className="vertical-timeline-element-subtitle">X University</h5>
         <p>
           Bachelors of Electrical Engineering & Computer Science <br />
           X Company Intern <br />
@@ -61,14 +61,14 @@ export const EduTimeline = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentStyle={{ background: '#68C7D1', color: '#fff' }}
+        contentStyle={{ background: '#132ed1', color: '#ffffff' }}
         contentArrowStyle={{ borderRight: '7px solid #68C7D1' }}
         date="2026-2027"
         iconStyle={{ background: '#68C7D1', color: '#fff' }}
         icon={<img src={UCB} alt="UCB Logo" />}
       >
         <h3 className="vertical-timeline-element-title">Graduate Student</h3>
-        <h5 className="vertical-timeline-element-subtitle">X City, X State</h5>
+        <h5 className="vertical-timeline-element-subtitle">X University</h5>
         <p>
           Masters of Cybersecurity <br />
           X Research <br />
