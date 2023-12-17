@@ -9,7 +9,7 @@ import {
 
 export const Toolstack = () => {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "5vh" }}>
       <section className='techstackHeader'><h2>Operating Systems</h2></section>
       <Col xs={4} md={2} className="tech-icons">
         <SiApple />
