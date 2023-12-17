@@ -59,6 +59,7 @@ body {
 h1 {
   display: flex;
   flex-direction: column;
+  font-size: 2.5rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -95,12 +96,10 @@ input:focus, textarea:focus, select:focus {
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
-		padding: 0 150px;
+    padding: 0 5vw;
 	}
 }
 
-
-/************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -250,18 +249,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .logo-text {
-  font-size: 18px; /* Adjust the font size as needed */
-  font-weight: 400; /* You can adjust the font weight as desired */
-  color: #ffffff; /* Set the text color */
+  font-size: 18px; 
+  font-weight: 400; 
+  color: #ffffff; 
   letter-spacing: 0.8px;
 }
 
 
 
-/************ Banner Css ************/
+
 .banner {
   padding: 200px 50px 250px 50px;
   /* background-image: url('./assets/img/banner-bg.png'); */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .banner .tagline {
@@ -331,8 +332,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-
-/************ Projects Css ************/
 .project {
   padding: 100px;
   position: relative;
@@ -365,7 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 90%; 
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -481,29 +480,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .tags {
   display: block;
-  margin-top: 5px; /* Optional: Add some spacing between description and tags */
+  margin-top: 5px; 
   color: #5dc05d;
 }
 
-/************ Footer Css ************/
 
-/* Adds padding at the bottom of the footer */
 .footer {
   padding: 0 0 50px 0;
 }
 
-/* Styles for images within the footer */
+
 .footer img {
-  width: 26%; /* Sets the width of images to 26% of their containing element */
+  width: 26%; 
 }
 
-/* Styles for paragraphs within the footer */
+
 .footer p {
-  font-weight: 400; /* Sets the font weight to normal */
-  font-size: 14px; /* Sets the font size to 14 pixels */
-  color: #B8B8B8; /* Sets the text color to a shade of gray */
-  letter-spacing: 0.5px; /* Adds slight spacing between letters */
-  margin-top: 10px; /* Adds margin at the top of the paragraph */
+  font-weight: 400; 
+  font-size: 14px; 
+  color: #B8B8B8; 
+  letter-spacing: 0.5px;
+  margin-top: 10px; 
 }
 
 .vertical-timeline * {
@@ -555,7 +552,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: url();
   background-size: cover;
   background-position: center;
-  
   font-family: Arial, sans-serif;
 }
 
@@ -693,8 +689,10 @@ body:has(.card[data-color="brown"]:hover) {
   }
   
   .card .card-image {
-    width: 400px;    
+    aspect-ratio: 2 / 3;
+    border-radius: 2rem; 
   }
+  
 }
 
 @media(max-width: 600px) {
@@ -737,5 +735,44 @@ body:has(.card[data-color="brown"]:hover) {
     scale: 0.8;
     translate: 30%;
     opacity: 0;
+  }
+}
+
+/* Extra Small Devices */
+@media only screen and (max-width: 576px) {
+  main .container {
+    padding: 0 10px; /* Adjust padding for narrow screens */
+  }
+
+  .tech-icons {
+    font-size: 3em !important; 
+  }
+}
+
+/* Small Devices */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .container {
+    padding: 0 20px; 
+  }
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .project .nav.nav-pills {
+    width: 80%; 
+  }
+}
+
+/* Large Devices */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  h1 {
+    font-size: 2.2rem; 
+  }
+}
+
+/* Extra Large Devices */
+@media only screen and (min-width: 1201px) {
+  main .container {
+    padding: 0 50px; 
   }
 }
