@@ -306,7 +306,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
-
 .banner {
   padding: 200px 50px 250px 50px;
   /* background-image: url('./assets/img/banner-bg.png'); */
@@ -314,6 +313,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -324,14 +324,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
+  line-height: 1.2; 
   margin-bottom: 20px;
   display: block;
+  white-space: normal; 
+  overflow: hidden; 
 }
+
+.banner .wrap {
+  display: inline-block;
+  white-space: normal; 
+  max-height: 150px; 
+  overflow: hidden;
+}
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -339,6 +350,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -347,19 +359,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  z-index: 1; 
 }
+
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+  z-index: 1; 
 }
+
 .banner button:hover svg {
   margin-left: 25px;
 }
+
 .banner img {
   animation: updown 3s linear infinite;
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -372,14 +390,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 
-.wrap {
-  display: inline-block;
-  white-space: nowrap;
-}
 
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-}
 
 .project {
   padding: 100px;
