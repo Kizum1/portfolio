@@ -39,7 +39,7 @@ export const EduTimeline = () => {
         <h3 className="vertical-timeline-element-title">Community College Student</h3>
         <h5 className="vertical-timeline-element-subtitle">Diablo Valley College</h5>
         <p>
-          Started my undergraduate studies after high school <br />
+          Started my associates of science in computer engineering <br />
           Became the Google Developers Student Lead after a year <br />
           Completed all required classes with a 4.0 GPA <br />
         </p>
