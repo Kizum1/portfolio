@@ -8,42 +8,42 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100);
-  const toRotate = ["CSE Sophomore", "Frontend Developer", "Cybersecurity Fanatic"];
+  const toRotate = ["Computer Engineering Sophmore", "Frontend Enthusiast", "Cybersecurity Aspirant"];
   const period = 1000;
 
   useEffect(() => {
+    const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting
+        ? fullText.substring(0, text.length - 1)
+        : fullText.substring(0, text.length + 1);
+  
+      setText(updatedText);
+  
+      if (isDeleting) {
+        setDelta((prevDelta) => prevDelta / 2);
+      }
+  
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setDelta((prevDelta) => period);
+      } else if (isDeleting && updatedText === "") {
+        setIsDeleting(false);
+        setLoopNum((prevLoopNum) => prevLoopNum + 1);
+        setDelta((prevDelta) => 100);
+      }
+    };
+  
     let ticker = setInterval(() => {
       tick();
     }, delta);
-
+  
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(100);
-    }
-  };
-
+  }, [text, delta, isDeleting, loopNum, setIsDeleting, setDelta, setText, setLoopNum]);
+  
   return (
     <section className="banner" id="home">
       <Container>
@@ -56,7 +56,7 @@ export const Banner = () => {
                 <span
                   className="txt-rotate"
                   dataPeriod="1000"
-                  data-rotate='["Sophomore Student", "Frontend Developer", "Cybersecurity Fanatic"]'
+                  data-rotate='["Computer Engineering Sophmore", "Frontend Enthusiast", "Cybersecurity Aspirant"]'
                 >
                   <span className="wrap">{text}</span>
                 </span>
