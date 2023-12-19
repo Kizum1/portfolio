@@ -71,9 +71,9 @@ export const EduTimeline = () => {
         <h3 className="vertical-timeline-element-title">Undergraduate/Graduate Student</h3>
         <h5 className="vertical-timeline-element-subtitle">UC Berkeley</h5>
         <p>
+          On track to transfer to UC Berkeley <br />
           Bachelors of Electrical Engineering & Computer Science <br />
-          Masters of Cybersecurity <br />
-          X Company Intern<br />
+          
         </p>
       </VerticalTimelineElement>
     </VerticalTimeline></div>
