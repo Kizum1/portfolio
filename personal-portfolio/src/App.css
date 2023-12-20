@@ -304,15 +304,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 
+  .banner {
+    padding: 200px 50px 250px 50px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  section:not(.banner) {
+    padding-top: 100px; 
+  }
 
+ 
 
-.banner {
-  padding: 200px 50px 250px 50px;
-  /* background-image: url('./assets/img/banner-bg.png'); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  @media (max-width: 768px) {
+    
+    .banner {
+      height: auto; 
+    }
+  
+    section:not(.banner) {
+      padding-top: 50px; 
+    }
+  }
+
 
 .banner .tagline {
   font-weight: 700;
