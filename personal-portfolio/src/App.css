@@ -516,7 +516,7 @@ section:not(.banner) {
   padding: 2em 0;
 }
 .vertical-timeline::after {
- /* clearfix */
+
   content: '';
   display: table;
   clear: both;
