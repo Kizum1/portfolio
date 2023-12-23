@@ -300,6 +300,8 @@ section:not(.banner) {
   line-height: 1.5em;
   width: 96%;
 }
+
+
 .banner button {
   color: #fff;
   font-weight: 700;
