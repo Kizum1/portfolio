@@ -252,20 +252,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 .banner {
-  padding: 200px 50px 250px 50px;
-  height: 500px;
+  padding: 20% 5% 25% 5%; 
   overflow: hidden;
+  height: auto;
 }
 section:not(.banner) {
   padding-top: 100px;
 }
 @media (max-width: 768px) {
   .banner {
-      height: auto;
- }
+    height: auto; 
+    padding: 10% 5%; 
+  }
   section:not(.banner) {
-      padding-top: 50px;
- }
+    padding-top: 5%; 
+  }
 }
 .banner .tagline {
   font-weight: 700;
