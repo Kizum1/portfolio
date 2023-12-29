@@ -7,7 +7,7 @@ import { SiCss3, SiHtml5, SiTailwindcss, SiGnubash, SiPowershell } from "react-i
 
 export const Techstack = () => {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "5vh" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "1vh" }}>
       <section className="techstackHeader">
         <h2>Languages / Frameworks</h2>
       </section>
