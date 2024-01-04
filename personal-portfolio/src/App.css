@@ -65,14 +65,7 @@ p, a, li, button, ul {
 a:hover {
   text-decoration: none;
 }
-img {
-  width: 100%;
-  height: auto;
-}
-button {
-  border: 0;
-  background-color: transparent;
-}
+
 input:focus, textarea:focus, select:focus {
   outline: none;
 }
@@ -82,6 +75,7 @@ input:focus, textarea:focus, select:focus {
       padding: 0 5vw;
  }
 }
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -90,22 +84,30 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
   transition: 0.3s ease-in-out;
+  min-width: 100px; 
 }
+
 @media (max-width: 1200px) {
   nav.navbar .navbar-nav .nav-link.navbar-link {
-      font-size: 16px;
- }
+    font-size: 16px;
+    min-width: 80px; 
+  }
 }
+
 @media (max-width: 992px) {
   nav.navbar .navbar-nav .nav-link.navbar-link {
-      font-size: 14px;
- }
+    font-size: 14px;
+    min-width: 60px; 
+  }
 }
+
 @media (max-width: 576px) {
   nav.navbar .navbar-nav .nav-link.navbar-link {
-      font-size: 12px;
- }
+    font-size: 12px;
+    min-width: 40px; 
+  }
 }
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -209,7 +211,6 @@ nav.navbar .navbar-toggler:active, nav.navbar .navbar-toggler:focus {
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
-  background-image: none;
   position: relative;
   border-bottom: 2px solid #fff;
   transition: all 300ms linear;
@@ -252,22 +253,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 .banner {
-  padding: 20% 5% 25% 5%; 
+  position: relative;
+  padding: 20% 5% 25% 5%;
   overflow: hidden;
   height: auto;
 }
+
 section:not(.banner) {
   padding-top: 100px;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .banner {
-    height: auto; 
-    padding: 10% 5%; 
+    height: auto;
+    padding: 10% 5%;
   }
+
   section:not(.banner) {
-    padding-top: 5%; 
+    padding-top: 5%;
   }
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -278,6 +288,7 @@ section:not(.banner) {
   margin-bottom: 16px;
   display: inline-block;
 }
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -288,12 +299,14 @@ section:not(.banner) {
   white-space: normal;
   overflow: hidden;
 }
+
 .banner .wrap {
   display: inline-block;
   white-space: normal;
   max-height: 150px;
   overflow: hidden;
 }
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -303,29 +316,7 @@ section:not(.banner) {
 }
 
 
-.banner button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-  z-index: 1;
-}
-.banner button:hover svg {
-  margin-left: 25px;
-}
-.banner img {
-  animation: updown 3s linear infinite;
-}
+
 @keyframes updown {
   0% {
       transform: translateY(-20px);
@@ -548,7 +539,7 @@ section:not(.banner) {
 }
 .timeline-container {
   width: 100%;
-  background-image: url();
+
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
