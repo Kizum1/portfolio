@@ -72,9 +72,9 @@ export const EduTimeline = () => {
         <h3 className="vertical-timeline-element-title">Incoming Research Intern</h3>
         <h5 className="vertical-timeline-element-subtitle">SETI Institute - Mountain View, CA</h5>
         <p>
-        Working with Dr. Gorti on Star and Planet Formation research <br />
-        Using Python for advanced data analysis <br />
-        Using NASA equipment to analyze protoplanetary disks <br />
+        Engaged in Star and Planet Formation computation using RADMC3D software <br />
+        Created a wrapper around a complex mathematical model to simulate star formation <br />
+        Utilized NumPy, SciPy, and Pandas libraries to manipulate, clean, and preprocess data efficiently <br />
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -88,7 +88,7 @@ export const EduTimeline = () => {
         <h3 className="vertical-timeline-element-title">Undergraduate/Graduate Student</h3>
         <h5 className="vertical-timeline-element-subtitle">UC Berkeley - Berkeley, CA</h5>
         <p>
-          On track to transfer to UC Berkeley <br />
+          On track to transfer to a 4 year institute <br />
           
         </p>
       </VerticalTimelineElement>
