@@ -69,12 +69,10 @@ export const EduTimeline = () => {
         iconStyle={{ background: '#68C7D1', color: '#fff' }}
         icon={<img src={seti} alt="CodePath Logo" />}
       >
-        <h3 className="vertical-timeline-element-title">Incoming Research Intern</h3>
+        <h3 className="vertical-timeline-element-title">Computing Intern</h3>
         <h5 className="vertical-timeline-element-subtitle">SETI Institute - Mountain View, CA</h5>
         <p>
-        Engaged in Star and Planet Formation computation using RADMC3D software <br />
-        Created a wrapper around a complex mathematical model to simulate star formation <br />
-        Utilized NumPy, SciPy, and Pandas libraries to manipulate, clean, and preprocess data efficiently <br />
+         To Be Added <br />
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement

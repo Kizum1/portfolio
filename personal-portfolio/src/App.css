@@ -571,24 +571,24 @@ img {
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
+}body .card[data-color="blue"]:hover {
+  background-color: rgba(var(--blue-rgb), 0.25);
 }
-body:has(.card[data-color="blue"]:hover) {
-  background-color: rgb(var(--blue-rgb) / 25%);
+
+body .card[data-color="green"]:hover {
+  background-color: rgba(var(--green-rgb), 0.25);
 }
-body:has(.card[data-color="blue"]:hover) {
-  background-color: rgb(var(--blue-rgb) / 25%);
+
+body .card[data-color="brown"]:hover {
+  background-color: rgba(var(--brown-rgb), 0.25);
 }
-body:has(.card[data-color="green"]:hover) {
-  background-color: rgb(var(--green-rgb) / 25%);
-}
-body:has(.card[data-color="brown"]:hover) {
-  background-color: rgb(var(--brown-rgb) / 25%);
-}
+
 #cards {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
+
 .card {
   background-size: cover;
   background-position: center;
@@ -597,52 +597,67 @@ body:has(.card[data-color="brown"]:hover) {
   outline: none;
   transition: scale 100ms;
 }
+
 .card .card-front-image {
   position: relative;
   z-index: 2;
 }
+
 .card .card-image {
   width: clamp(300px, 20vw, 500px);
   aspect-ratio: 2 / 3;
   border-radius: clamp(0.5rem, 0.75vw, 2rem);
 }
+
 .card-faders {
   height: 100%;
   width: 100%;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   opacity: 0;
   transition: opacity 1500ms;
   pointer-events: none;
 }
+
 .card:hover .card-faders {
   opacity: 1;
 }
+
 .card:active {
-  scale: 0.98;
+  transform: scale(0.98);
 }
+
 .card-fader {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
+
 .card-fader:nth-child(odd) {
   animation: fade-left 3s linear infinite;
 }
+
 .card-fader:nth-child(even) {
   animation: fade-right 3s linear infinite;
 }
-.card-fader:is(:nth-child(3), :nth-child(4)) {
+
+.card-fader:nth-child(3),
+.card-fader:nth-child(4) {
   animation-delay: 750ms;
 }
-.card-fader:is(:nth-child(5), :nth-child(6)) {
+
+.card-fader:nth-child(5),
+.card-fader:nth-child(6) {
   animation-delay: 1500ms;
 }
-.card-fader:is(:nth-child(7), :nth-child(8)) {
+
+.card-fader:nth-child(7),
+.card-fader:nth-child(8) {
   animation-delay: 2250ms;
 }
+
 @media(max-width: 1200px) {
   body {
       justify-content: flex-start;
