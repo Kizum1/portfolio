@@ -37,8 +37,8 @@ export const Projects = () => {
       imgUrl: projImg4,
     },
     {
-      title: "WhoIntedMe",
-      description: "Full Stack Web Application for analyzing data from League of Legends",
+      title: "Wind Density Modeler",
+      description: "Simulates stellar accretion disk winds, calculating the wind density",
       Tags: "React, Flask, Tailwind, Python, SQLite, Javascript",
       imgUrl: projImg3,
     },
@@ -57,8 +57,8 @@ export const Projects = () => {
           <Col size={12}>
             <div className="animate__animated animate__fadeIn">
               <h2>Projects</h2>
-              <p>This showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
-              <Row>
+              <p>Here are some projects I have worked on</p>
+                <Row>
                 {projects.map((project, index) => (
                   <ProjectCard key={index} {...project} />
                 ))}
