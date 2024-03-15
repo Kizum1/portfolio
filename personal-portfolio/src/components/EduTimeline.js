@@ -69,12 +69,14 @@ export const EduTimeline = () => {
         iconStyle={{ background: '#68C7D1', color: '#fff' }}
         icon={<img src={seti} alt="CodePath Logo" />}
       >
-        <h3 className="vertical-timeline-element-title">Incoming Research Intern</h3>
+        <h3 className="vertical-timeline-element-title">Computing Intern</h3>
         <h5 className="vertical-timeline-element-subtitle">SETI Institute - Mountain View, CA</h5>
         <p>
-        Working with Dr. Gorti on Star and Planet Formation research <br />
-        Using Python for advanced data analysis <br />
-        Using NASA equipment to analyze protoplanetary disks <br />
+        Contributed to the modification of RADMC3D, an astrophysical tool to compute particle wind models of
+        protoplanetary disk formation in new stars. <br />
+        Assisted Dr. Gorti in designing a math model to compute density data that can be visualized. <br />
+        Utilized Numpy, Matplotlib, and Python3, to process and aggregate data to feed into RADMC3D computation
+        model.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -86,9 +88,9 @@ export const EduTimeline = () => {
         icon={<img src={UCB} alt="UCB Logo" />}
       >
         <h3 className="vertical-timeline-element-title">Undergraduate/Graduate Student</h3>
-        <h5 className="vertical-timeline-element-subtitle">UC Berkeley - Berkeley, CA</h5>
+        <h5 className="vertical-timeline-element-subtitle">UC Institute - X, CA</h5>
         <p>
-          On track to transfer to UC Berkeley <br />
+          On track to transfer to a 4 year institute <br />
           
         </p>
       </VerticalTimelineElement>
