@@ -17,36 +17,42 @@ export const Projects = () => {
       description: "Website for Viking Hacks 2023",
       Tags: "HTML, CSS, Javascript",
       imgUrl: projImg1,
+      githubUrl: "https://github.com/Kizum1/vikinghacks"
     },
     {
       title: "Notion Reminder Bot",
       description: "Discord bot that sends reminders from Notion to Discord",
       Tags: "Discord JS, Javascript, Notion API",
       imgUrl: projImg5,
+      githubUrl: "https://github.com/pluffpenguin/Notion-Deadline-Reminder-Bot"
     },
     {
       title: "VReader",
       description: "VR book reader for the Oculus Quest 2",
       Tags: "Lua, Roblox Studios",
       imgUrl: projImg2,
+      githubUrl: "https://github.com/Kizum1/VReader"
     },
     {
       title: "Worldview Wanderer",
       description: "Destination Viewer with local cuisine and music.",
       Tags: "Python, Pygame",
       imgUrl: projImg4,
+      githubUrl: "https://github.com/TeachMeTW/WorldView-Wanderer"
     },
     {
       title: "Wind Density Modeler",
       description: "Simulates stellar accretion disk winds, calculating the wind density",
-      Tags: "React, Flask, Tailwind, Python, SQLite, Javascript",
+      Tags: "Python, Jupyter Notebook",
       imgUrl: projImg3,
+      githubUrl: "https://github.com/K1zum1/Disc-Wind-Density-Program"
     },
     {
-      title: "Google Developers Website",
+      title: "GDSC Website",
       description: "Website for DVC Developers",
       Tags: "HTML, CSS, Javascript",
       imgUrl: projImg6,
+      githubUrl: "https://github.com/Kizum1/gdscwebsite"
     },
   ];
 
